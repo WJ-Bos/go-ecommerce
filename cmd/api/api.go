@@ -25,12 +25,12 @@ func NewAPIServer(address string, db *sql.DB) *APIServer {
 // Run the Api Server
 func (s *APIServer) Run() error {
 	router := mux.NewRouter()
-	subrouter := router.PathPrefix("/api/v1").Subrouter()
+	subRouter := router.PathPrefix("/api/v1").Subrouter()
 
 	//creating user service handler
 	userHandler := user.NewHandler()
-	//passing the subrouter to Register the Routes with the Correct prefix
-	userHandler.RegisterRoutes(subrouter)
+	//passing the subRouter to Register the Routes with the Correct prefix
+	userHandler.RegisterRoutes(subRouter)
 
 	log.Println("API v1 server listening on " + s.address)
 
