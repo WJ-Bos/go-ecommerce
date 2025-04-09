@@ -1,0 +1,61 @@
+# Binaries
+/bin/
+/out/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Dependency directories
+/vendor/
+/go/pkg/
+
+# Go workspace file
+go.work
+
+# IDE (Goland) specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Build cache
+/.cache/
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Debug files
+debug
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VSCode (if used)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# GoCover files
+*.out
+
+# Dependency tools
+glide.yaml
+glide.lock
